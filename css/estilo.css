@@ -1,0 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+img{
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+}
+p{
+    font-size: 30px;
+}
