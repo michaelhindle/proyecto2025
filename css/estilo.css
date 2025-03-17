@@ -1,11 +1,124 @@
 html {
     box-sizing: border-box;
 }
-img{
-    object-fit: cover;
-    max-width: 100%;
-    display: block;
-}
 p{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    max-width:100%;
+}
+.cabezara{
+    display: flex;
+    /*background-color: coral;*/
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+    background-color: yellow;
+    margin: 0 25px;
+}
+.cabezara h1{
+    font-size: 50px;
+}
+.proyecto{
+    object-fit: cover;
+    display: block;
+    background-color: red;
+    padding: 0 20px;
+}
+.proyecto p{
+    padding-bottom: 50px;
+}
+.proyecto img{
+    padding-top: 10px;
+    width: 100px;
+    height: 140px;
+}
+
+.articulo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.indice_contenido{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    min-width: 0;
+    gap: 20px;
+    text-align: center;
+    margin: 10px 70px 10px 10px;
+}
+.indice_contenido a{
+    font-weight: 600;
+    font-size: 25px;
+    color: darkblue;
+}
+.indice_contenido a:hover{
+    color: aquamarine;
+}
+@media (max-width:768px){
+    .proyecto img{
+        display: none;
+    }
+}
+@media (max-width:768px){
+    .cabezara{
+        flex-direction: column;
+    }
+}
+.index_come a{
+    text-align: center;
+    font-size: 40px;
+}
+.index_come p{
+    text-align: center;
+    font-size: 25px;
+}
+.empresa {
+    display: flex;
+    margin: 20px 40px;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: green;
+}
+.empresa h2{
     font-size: 30px;
+}
+.empresa p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .empresa img{
+        display: none;
+    }
+
+}
+.index_articulo{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    gap: 20px;
+    background-color: cadetblue;
+}
+.index_proyecto{
+    border:solid 1px black;
+    padding: 10px;
+}
+.index_proyecto img{
+    height: 170px;
+    width: 160px;
+}
+@media (max-width: 768px) {
+    .index_articulo{
+        flex-direction: column;
+    }
+    .index_proyecto img{
+        display: none;
+    }
+
 }
