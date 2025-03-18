@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: Arial, serif;
 }
 p{
     font-size: 15px;
@@ -23,11 +24,15 @@ body{
 .cabezara h1{
     font-size: 50px;
 }
+main{
+    margin: 0 40px;
+}
 .proyecto{
     object-fit: cover;
     display: block;
     background-color: red;
     padding: 0 20px;
+    border: solid 1px black;
 }
 .proyecto p{
     padding-bottom: 50px;
@@ -42,6 +47,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin: 40px 0;
+
 }
 
 .indice_contenido{
@@ -121,4 +128,46 @@ body{
         display: none;
     }
 
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 30px 0 60px 0;
+
+}
+.footer-superior{
+    margin-bottom: 50px;
+}
+.tabla_cliente{
+    table-border-color-dark: white;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 20px 0;
+}
+th, td{
+    padding: 0 30px;
+}
+.footer-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nombres a{
+    color: white;
+}
+.footer-nombres{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 100px;
+}
+.footer-iconos{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 100px 0 0;
 }
