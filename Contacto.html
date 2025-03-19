@@ -34,70 +34,115 @@
         </div>
     </header>
     <main>
+        <div class="formulario-contact">
+            <form action="server.php" method="post">
+                <div class="formulario-nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre">
 
+                    <label for="apellidos">Apellidos: </label>
+                    <input id="apellidos" type="text" name="apellidos" placeholder="Escribe tu apellido">
+
+                    <label for="numero">Telefono:</label>
+                    <input id="numero" type="number" name="numero" placeholder="Escribe tu contacto">
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Escribe el email">
+
+                    <label for="contraseña">Codigo secreto para el pedido:</label>
+                    <input id="contraseña" type="password" name="contraseña" placeholder="Escribe la contraseña">
+                </div>
+                <div class="formulario-empresa">
+                    <p> Elije la empresa</p>
+                    <ul class="formulario-empresa-list">
+                        <li>
+                            <input id="kilmia" type="radio" name="empresa" value="Kilmia">
+                            <label for="kilmia">Kilmia</label>
+                        </li>
+                        <li>
+                            <input id="Polistras" type="radio" name="empresa" value="Polistras">
+                            <label for="Polistras">Polistras</label>
+                        </li>
+                        <li>
+                            <input id="Jukia" type="radio" name="empresa" value="Jukia">
+                            <label for="Jukia">Jukia</label>
+                        </li>
+                        <li>
+                            <input id="otra" type="radio" name="empresa" value="otra">
+                            <label for="otra">Otra empresa</label>
+                        </li>
+                    </ul>
+                    <label for="nueva-empresa">Nombre de la empresa:</label>
+                    <input id="nueva-empresa" type="text" name="nueva-empresa"  placeholder="Escribe aqui...">
+                </div>
+                 <div class="formulario-pedido">
+                    <p>Tipo de pedido</p>
+                    <ul class="formulario-pedido-list   ">
+                        <li>
+                            <input id="diseño" type="checkbox" name="pedido" value="diseño">
+                            <label for="diseño">Diseño</label>
+                        </li>
+                        <li>
+                            <input id="fabricación" type="checkbox" name="pedido" value="fabricacion">
+                            <label for="fabricación">Fabricar</label>
+                        </li>
+                        <li>
+                            <input id="programar" type="checkbox" name="pedido" value="programar">
+                            <label for="programar">Programar</label>
+                        </li>
+                        <li>
+                            <input id="mejora" type="checkbox" name="pedido" value="mejora">
+                            <label for="mejora">Mejora</label>
+                        </li>
+                        <li>
+                            <input id="analizar" type="checkbox" name="pedido" value="analizar">
+                            <label for="analizar">Analizar</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="formulario-fecha">
+                    <p>Fecha donde el tiempo maximo se puede realizar el pedio. <span>(Tener en cuenta que cuanto mas corto de tiempo se disponga mas dinero costará)</span></p>
+                    <label for="fecha">Elige la fecha:</label>
+                    <input id="fecha" type="date">
+                </div>
+                <label for="textarea">
+                    <textarea id="textarea" placeholder="Tener en cuenta..."></textarea>
+                </label>
+                <div id="formulario-documento">
+                    <label for="document">Documentos </label>
+                    <input id="document" type="file" name="document" accept=".txt,.pdf,.docx,.xlsx,.html,.css" >
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </main>
 </body>
     <footer>
         <div class="footer-superior">
             <table class="tabla_cliente">
                 <tr>
-                    <th>
-                        Sedes
-                    </th>
-                    <th>
-                        Pais
-                    </th>
-                    <th>
-                        Contacto
-                    </th>
-                    <th>
-                        Dirección
-                    </th>
+                    <th>Sedes</th>
+                    <th>Pais</th>
+                    <th>Contacto</th>
+                    <th>Dirección</th>
                 </tr>
                 <tr>
-                    <td>
-                        Kilmia
-                    </td>
-                    <td>
-                        Alemania
-                    </td>
-                    <td>
-                        +00 49 122 456 7865
-                    </td>
-
-                    <td>
-                        Junterdhtch thusstidasr, stret 74, nº 433
-                    </td>
-
+                    <td>Kilmia</td>
+                    <td>Alemania</td>
+                    <td>+00 49 122 456 7865</td>
+                    <td>Junterdhtch thusstidasr, stret 74, nº 433</td>
                 </tr>
                 <tr>
-                    <td>
-                        Polistras
-                    </td>
-
-                    <td>
-                        Eslovenia
-                    </td>
-                    <td>
-                        +00 386 572 570432473
-                    </td>
-                    <td>
-                        Hibthrast Posnester, 23, hiredsad 54
-                    </td>
+                    <td>Polistras</td>
+                    <td>Eslovenia</td>
+                    <td>+00 386 572 570432473</td>
+                    <td>Hibthrast Posnester, 23, hiredsad 54</td>
                 </tr>
                 <tr>
-                    <td>
-                        Jukia
-                    </td>
-                    <td>
-                        Portugal
-                    </td>
-                    <td>
-                        +00 351 0951 32453239
-                    </td>
-                    <td>
-                        Kientraste plosntrant, 4, contranrted 9
-                    </td>
+                    <td>Jukia</td>
+                    <td>Portugal</td>
+                    <td>+00 351 0951 32453239</td>
+                    <td>Kientraste plosntrant, 4, contranrted 9</td>
                 </tr>
             </table>
         </div>
@@ -108,7 +153,7 @@
                     <li><a href="proyecto.html">Proyectos</a></li>
                     <li><a href="cliente.html">Clientes</a></li>
                 </ul>
-            <ul class="footer-iconos">
+            <ul class="footer-icons">
                 <li><a href="https://www.instagram.com/"><img src="imagen/instagram.svg" alt="instagram"></a></li>
                 <li><a href="https://x.com/?lang=es"><img src="imagen/twitter.svg" alt="twitter"></a></li>
                 <li><a href="https://www.facebook.com/"><img src="imagen/facebook.svg" alt="facebook"></a></li>
